@@ -1,0 +1,2 @@
+<area shape="rect" href="$classConnectionWrapper.html" title="{ConnectionWrapper\n|&#45; m_nick\l&#45; m_registered\l&#45; m_socket\l|+ ConnectionWrapper()\l+ isRegistered()\l+ nick()\l+ setNick()\l+ setRegistered()\l+ sendMessage\l# incoming\l# stateChanged\l}" alt="" coords="5,139,179,379">
+<area shape="rect" href="$classManager.html" title="{Manager\n|&#45; m_connections\l&#45; m_server\l|+ Manager()\l&#45; parseMessage()\l&#45; newConnection\l&#45; processMessage\l}" alt="" coords="203,183,339,335">

@@ -1,0 +1,120 @@
+\section{MainDialog Class Reference}
+\label{classMainDialog}\index{MainDialog@{MainDialog}}
+{\tt \#include $<$maindialog.h$>$}
+
+Inheritance diagram for MainDialog:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=69pt]{classMainDialog__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for MainDialog:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classMainDialog__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf MainDialog} (QWidget $\ast$parent=0)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf Manager} $\ast$ {\bf m\_\-manager}
+\item 
+QPushButton $\ast$ {\bf m\_\-quitButton}
+\item 
+{\bf Server} $\ast$ {\bf m\_\-server}
+\item 
+QLabel $\ast$ {\bf m\_\-statusLabel}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file maindialog.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{MainDialog@{MainDialog}!MainDialog@{MainDialog}}
+\index{MainDialog@{MainDialog}!MainDialog@{MainDialog}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}MainDialog::MainDialog (QWidget $\ast$ {\em parent} = {\tt 0})}\label{classMainDialog_e908b2fb60d524f7c4690570ba1d6e3d}
+
+
+
+
+Definition at line 11 of file maindialog.cpp.
+
+References m\_\-manager, m\_\-quitButton, m\_\-server, m\_\-statusLabel, and port.
+
+\begin{Code}\begin{verbatim}11                                       : QDialog(parent)
+12 {
+13     m_statusLabel = new QLabel(tr("Starting..."), this);
+14     m_quitButton = new QPushButton(tr("&Quit"), this);
+15     m_server = new Server(this);
+16     m_manager = new Manager(m_server, this);
+17 
+18     QVBoxLayout *l = new QVBoxLayout;
+19     l->addWidget(m_statusLabel);
+20     l->addStretch(1);
+21     l->addWidget(m_quitButton);
+22     setLayout(l);
+23 
+24     connect(m_quitButton, SIGNAL(clicked()), this, SLOT(close()));
+25 
+26     m_server->listen(QHostAddress::Any, port);
+27     m_statusLabel->setText(tr("Listening on port %1").arg(port));
+28 }
+\end{verbatim}
+\end{Code}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{MainDialog@{MainDialog}!m_manager@{m\_\-manager}}
+\index{m_manager@{m\_\-manager}!MainDialog@{MainDialog}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Manager}$\ast$ {\bf MainDialog::m\_\-manager}\hspace{0.3cm}{\tt  [private]}}\label{classMainDialog_14d2ae30077e1aabcdcf7f15b1e2cb03}
+
+
+
+
+Definition at line 22 of file maindialog.h.
+
+Referenced by MainDialog().\index{MainDialog@{MainDialog}!m_quitButton@{m\_\-quitButton}}
+\index{m_quitButton@{m\_\-quitButton}!MainDialog@{MainDialog}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}QPushButton$\ast$ {\bf MainDialog::m\_\-quitButton}\hspace{0.3cm}{\tt  [private]}}\label{classMainDialog_fdfb6e1bd6ec0b8d4349a7e2b43012b7}
+
+
+
+
+Definition at line 19 of file maindialog.h.
+
+Referenced by MainDialog().\index{MainDialog@{MainDialog}!m_server@{m\_\-server}}
+\index{m_server@{m\_\-server}!MainDialog@{MainDialog}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Server}$\ast$ {\bf MainDialog::m\_\-server}\hspace{0.3cm}{\tt  [private]}}\label{classMainDialog_13b62159900b46462a4ec35c7ac84928}
+
+
+
+
+Definition at line 21 of file maindialog.h.
+
+Referenced by MainDialog().\index{MainDialog@{MainDialog}!m_statusLabel@{m\_\-statusLabel}}
+\index{m_statusLabel@{m\_\-statusLabel}!MainDialog@{MainDialog}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}QLabel$\ast$ {\bf MainDialog::m\_\-statusLabel}\hspace{0.3cm}{\tt  [private]}}\label{classMainDialog_5c1d7e2ff68fde3980a043a6a239fc59}
+
+
+
+
+Definition at line 20 of file maindialog.h.
+
+Referenced by MainDialog().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf maindialog.h}\item 
+{\bf maindialog.cpp}\end{CompactItemize}

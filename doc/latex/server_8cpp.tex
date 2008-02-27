@@ -1,0 +1,92 @@
+\section{server.cpp File Reference}
+\label{server_8cpp}\index{server.cpp@{server.cpp}}
+{\tt \#include $<$QDebug$>$}\par
+{\tt \#include $<$QSslKey$>$}\par
+{\tt \#include \char`\"{}server.h\char`\"{}}\par
+
+
+Include dependency graph for server.cpp:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{server_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+static const QByteArray {\bf certData} (\char`\"{}$\backslash$
+-----BEGIN CERTIFICATE-----$\backslash$n$\backslash$
+MIICBDCCAa6gAwIBAgIJANimnIGwYbPQMA0GCSqGSIb3DQEBBQUAMDgxCzAJBgNV$\backslash$n$\backslash$
+BAYTAkZJMQ0wCwYDVQQIEwRPdWx1MQ0wCwYDVQQHEwRPdWx1MQswCQYDVQQKEwJP$\backslash$n$\backslash$
+VDAeFw0wODAyMjUxOTMzNTNaFw0xMTAyMjQxOTMzNTNaMDgxCzAJBgNVBAYTAkZJ$\backslash$n$\backslash$
+MQ0wCwYDVQQIEwRPdWx1MQ0wCwYDVQQHEwRPdWx1MQswCQYDVQQKEwJPVDBcMA0G$\backslash$n$\backslash$
+CSqGSIb3DQEBAQUAA0sAMEgCQQCzVu78C26fVy+w92EAuNqFkWnbUm+g5kft2/NP$\backslash$n$\backslash$
+CUKDlLAKyd+2MjMmb/bdBrk/7XiPvmp3DBSYkcRVV54RNRMPAgMBAAGjgZowgZcw$\backslash$n$\backslash$
+HQYDVR0OBBYEFBtwZm20qbWlP33V1ktODkJ2aM+ZMGgGA1UdIwRhMF+AFBtwZm20$\backslash$n$\backslash$
+qbWlP33V1ktODkJ2aM+ZoTykOjA4MQswCQYDVQQGEwJGSTENMAsGA1UECBMET3Vs$\backslash$n$\backslash$
+dTENMAsGA1UEBxMET3VsdTELMAkGA1UEChMCT1SCCQDYppyBsGGz0DAMBgNVHRME$\backslash$n$\backslash$
+BTADAQH/MA0GCSqGSIb3DQEBBQUAA0EAqjbS0xbPhuha86oG9pm70QE56oeqLg7N$\backslash$n$\backslash$
+DZmVdCeFNjOZ40SpcdHgHPWwi6VjxjhsbM437Hrhj5OO5Tv7NseYNw==$\backslash$n$\backslash$
+-----END CERTIFICATE-----$\backslash$n\char`\"{})
+\item 
+static const QSslCertificate {\bf certificate} (certData)
+\item 
+static const QSslKey {\bf key} (keyData, QSsl::Rsa)
+\item 
+static const QByteArray {\bf keyData} (\char`\"{}$\backslash$
+-----BEGIN RSA PRIVATE KEY-----$\backslash$n$\backslash$
+MIIBOgIBAAJBALNW7vwLbp9XL7D3YQC42oWRadtSb6DmR+3b808JQoOUsArJ37Yy$\backslash$n$\backslash$
+MyZv9t0GuT/teI++ancMFJiRxFVXnhE1Ew8CAwEAAQJAHh4VWGKbG0tLCQ8iTTq+$\backslash$n$\backslash$
+B/xZqKl5ca36mml7vOQzNWF1DVjv1kXAydWRdv+baY0azYN5vssbn+pztYJG4SuX$\backslash$n$\backslash$
+8QIhANleP962Tql1zJINxrz5y8AyNL6uBiiSOhteXtDq330DAiEA0zZ4q78kdIhv$\backslash$n$\backslash$
+xdZXs31WypY9QXsJH0QeisYsMm/TNgUCIEtyDiMkDdt9mpqbE37mCNVV177TMioE$\backslash$n$\backslash$
+zwxOzgQfcaC3AiEAhnfbg5yBnR9v6ch4tXFK3FeiUBoAyMMZnshkQwgms/ECIG9T$\backslash$n$\backslash$
++pMRGZmnFYt6k0TuW/CkU3O/zarvPg5E8tocjpgQ$\backslash$n$\backslash$
+-----END RSA PRIVATE KEY-----$\backslash$n\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{server.cpp@{server.cpp}!certData@{certData}}
+\index{certData@{certData}!server.cpp@{server.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static const QByteArray certData ()\hspace{0.3cm}{\tt  [static]}}\label{server_8cpp_eb4a9d850a2e1197ebb2863c1b488f31}
+
+
+\index{server.cpp@{server.cpp}!certificate@{certificate}}
+\index{certificate@{certificate}!server.cpp@{server.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static const QSslCertificate certificate (certData)\hspace{0.3cm}{\tt  [static]}}\label{server_8cpp_fc2cd8e7e926e0609fb1a2af3a02b78c}
+
+
+
+
+Referenced by Server::incomingConnection(), and Server::Server().
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{server_8cpp_fc2cd8e7e926e0609fb1a2af3a02b78c_icgraph}
+\end{center}
+\end{figure}
+\index{server.cpp@{server.cpp}!key@{key}}
+\index{key@{key}!server.cpp@{server.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static const QSslKey key (keyData, QSsl::Rsa)\hspace{0.3cm}{\tt  [static]}}\label{server_8cpp_bc99944aaa79ca57ece32d48b85bc9c5}
+
+
+
+
+Referenced by Server::incomingConnection(), and Server::Server().
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{server_8cpp_bc99944aaa79ca57ece32d48b85bc9c5_icgraph}
+\end{center}
+\end{figure}
+\index{server.cpp@{server.cpp}!keyData@{keyData}}
+\index{keyData@{keyData}!server.cpp@{server.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static const QByteArray keyData (\char`\"{}$\backslash$-----BEGIN RSA PRIVATE KEY-----$\backslash$n$\backslash$MIIBOgIBAAJBALNW7vwLbp9XL7D3YQC42oWRadtSb6DmR+3b808JQoOUsArJ37Yy$\backslash$n$\backslash$MyZv9t0GuT/teI++ancMFJiRxFVXnhE1Ew8CAwEAAQJAHh4VWGKbG0tLCQ8iTTq+$\backslash$n$\backslash$B/xZqKl5ca36mml7vOQzNWF1DVjv1kXAydWRdv+baY0azYN5vssbn+pztYJG4SuX$\backslash$n$\backslash$8QIhANleP962Tql1zJINxrz5y8AyNL6uBiiSOhteXtDq330DAiEA0zZ4q78kdIhv$\backslash$n$\backslash$xdZXs31WypY9QXsJH0QeisYsMm/TNgUCIEtyDiMkDdt9mpqbE37mCNVV177TMioE$\backslash$n$\backslash$zwxOzgQfcaC3AiEAhnfbg5yBnR9v6ch4tXFK3FeiUBoAyMMZnshkQwgms/ECIG9T$\backslash$n$\backslash$+pMRGZmnFYt6k0TuW/CkU3O/zarvPg5E8tocjpgQ$\backslash$n$\backslash$-----END RSA PRIVATE KEY-----$\backslash$n\char`\"{})\hspace{0.3cm}{\tt  [static]}}\label{server_8cpp_7c41ac9360bb61fe961820ee4b53622b}
+
+

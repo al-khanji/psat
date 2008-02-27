@@ -1,0 +1,19 @@
+<area shape="rect" href="$classQDialog.html" title="{QDialog\n||}" alt="" coords="709,5,832,32">
+<area shape="rect" title="m_quitButton" alt="" coords="852,71,860,79">
+<area shape="rect" title="m_quitButton" alt="" coords="1200,155,1208,163">
+<area shape="rect" href="$classServer.html" title="{Server\n|&#45; m_pendingConnections\l|+ hasPendingConnections()\l+ nextPendingConnection()\l+ Server()\l+ ~Server()\l# incomingConnection()\l# modeChanged\l# socketEncrypted\l# socketError\l# sslError\l# stateChanged\l}" alt="" coords="547,107,995,291">
+<area shape="rect" title="m_server" alt="" coords="991,195,999,203">
+<area shape="rect" title="m_server" alt="" coords="1136,195,1144,203">
+<area shape="rect" href="$classQTcpServer.html" title="{QTcpServer\n||}" alt="" coords="104,160,248,187">
+<area shape="rect" title="m_pendingConnections" alt="" coords="281,217,289,225">
+<area shape="rect" title="m_pendingConnections" alt="" coords="543,207,551,215">
+<area shape="rect" title="m_statusLabel" alt="" coords="831,321,839,329">
+<area shape="rect" title="m_statusLabel" alt="" coords="1201,235,1209,243">
+<area shape="rect" href="$classManager.html" title="{Manager\n|&#45; m_connections\l&#45; m_server\l|+ Manager()\l&#45; parseMessage()\l&#45; newConnection\l&#45; processMessage\l}" alt="" coords="600,365,941,445">
+<area shape="rect" title="m_manager" alt="" coords="939,372,947,380">
+<area shape="rect" title="m_manager" alt="" coords="1251,235,1259,243">
+<area shape="rect" href="$classQObject.html" title="{QObject\n||}" alt="" coords="115,341,237,368">
+<area shape="rect" title="m_connections" alt="" coords="343,401,351,409">
+<area shape="rect" title="m_connections" alt="" coords="596,401,604,409">
+<area shape="rect" title="m_server" alt="" coords="251,445,259,453">
+<area shape="rect" title="m_server" alt="" coords="596,417,604,425">

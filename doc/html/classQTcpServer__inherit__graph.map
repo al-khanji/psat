@@ -1,0 +1,1 @@
+<area shape="rect" href="$classServer.html" title="{Server\n|&#45; m_pendingConnections\l|+ hasPendingConnections()\l+ nextPendingConnection()\l+ Server()\l+ ~Server()\l# incomingConnection()\l# modeChanged\l# socketEncrypted\l# socketError\l# sslError\l# stateChanged\l}" alt="" coords="5,139,205,379">
